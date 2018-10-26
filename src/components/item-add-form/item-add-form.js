@@ -14,10 +14,12 @@ export default class ItemAddForm extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    this.props.addItem(this.state.label);
-    this.setState({
-      label: ""
-    });
+    if (this.state.label.length !== 0) {
+      this.props.addItem(this.state.label);
+      this.setState({
+        label: ""
+      });
+    }
   };
 
   render() {

@@ -12,9 +12,9 @@ export default class App extends Component {
   maxId = 100;
   state = {
     todoData: [
-      this.createTodoItem("Drink coffee"),
-      this.createTodoItem("Drink Milk"),
-      this.createTodoItem("Drink Vodka")
+      this.createTodoItem("Make coffee"),
+      this.createTodoItem("Read the newspaper"),
+      this.createTodoItem("Check mail")
     ],
     textSearch: "",
     filter: "all"
